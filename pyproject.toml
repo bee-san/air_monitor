@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "air-monitor"
+version = "0.1.0"
+description = "Exposes Prometheus metrics for air traffic"
+authors = ["autumn skerritt <github@skerritt.blog>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "air_monitor"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+prometheus-client = "^0.15.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
